@@ -12,7 +12,7 @@ if (args.Length >= 2)
     return r.Success ? 0 : 1;
 }
 
-Console.WriteLine("=== Windows 凭据验证（演示）===");
+Console.WriteLine("=== Windows 凭据验证（演示）edit===");
 Console.Write("请输入账号: ");
 var username = Console.ReadLine() ?? string.Empty;
 Console.Write("请输入密码: ");
