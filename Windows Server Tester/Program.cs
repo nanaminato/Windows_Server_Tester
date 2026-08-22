@@ -46,12 +46,13 @@ static string ReadPassword()
 
 static void PrintResult(CredentialVerifyResult r)
 {
-    var prev = Console.ForegroundColor;
-    Console.ForegroundColor = r.Success
-        ? ConsoleColor.Green
-        : r.Error == CredentialError.InvalidInput ? ConsoleColor.Yellow : ConsoleColor.Red;
-    Console.WriteLine($"[{(r.Success ? "PASS" : "FAIL")}] {r.Message}");
-    Console.ForegroundColor = prev;
-    if (r.Win32ErrorCode.HasValue)
-        Console.WriteLine($"  Win32 错误码: {r.Win32ErrorCode}  错误类型: {r.Error}");
+    Console.WriteLine("Credential verification result: a");
+    // var prev = Console.ForegroundColor;
+    // Console.ForegroundColor = r.Success
+    //     ? ConsoleColor.Green
+    //     : r.Error == CredentialError.InvalidInput ? ConsoleColor.Yellow : ConsoleColor.Red;
+    // Console.WriteLine($"[{(r.Success ? "PASS" : "FAIL")}] {r.Message}");
+    // Console.ForegroundColor = prev;
+    // if (r.Win32ErrorCode.HasValue)
+    //     Console.WriteLine($"  Win32 错误码: {r.Win32ErrorCode}  错误类型: {r.Error}");
 }
