@@ -9,7 +9,7 @@ if (args.Length >= 2)
 {
     var r = WindowsCredentialVerifier.Verify(args[0], args[1]);
     PrintResult(r);
-    return r.Success ? 0 : 1;
+    return r.Success ? 0 : 2;
 }
 
 Console.WriteLine("=== Windows 凭据验证（演示）edit===");
